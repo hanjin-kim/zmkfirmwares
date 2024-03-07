@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/mouse.h>
+#include <behaviors/mouse_keys.dsti>
 
 #define DEFAULT 0
 #define UPPER 1
@@ -51,7 +52,7 @@
 &kp ESC    &kp F1     &kp F2      &kp F3     &kp F4     &kp F5             /**/           &kp F6  &kp F7     &kp F8    &kp F9     &kp F10   &kp F11
 &kp TAB    &kp Q      &kp W       &kp E      &kp R      &kp T              /**/           &kp Y   &kp U      &kp UP    &kp O      &kp P     &kp UNDER
 &kp CAPS   &kp LC(A)  &kp LC(S)   &trans     &trans     &kp G              /**/           &kp H   &kp LEFT   &kp DOWN  &kp RIGHT  &kp SEMI  &kp SQT
-&kp LC(Y)  &kp LC(Z)  &kp LC(X)   &kp LC(C)  &kp LC(V)  &kp B     &kp LBKT /**/  &kp RBKT &kp N   &kp LCLK  &kp SCLK  &kp RCLK  &kp FSLH  &kp DQT                                          &kp RET    &kp SPACE &kp DEL  /**/  &kp BSPC &kp RET                             
+&kp LC(Y)  &kp LC(Z)  &kp LC(X)   &kp LC(C)  &kp LC(V)  &kp B     &kp LBKT /**/  &kp RBKT &kp N   &mkp LCLK  &mkp SCLK  &mkp RCLK  &kp FSLH  &kp DQT                                          &kp RET    &kp SPACE &kp DEL  /**/  &kp BSPC &kp RET                             
             >;
         };
 
