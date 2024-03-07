@@ -17,6 +17,11 @@
 #define LOWER 2
 #define NAVI 3
 
+&lt {
+    tapping-term-ms = <200>;
+    flavor = "tap-unless-interrupted";
+};
+
 / {
     behaviors {
         bhm: balanced_homerow_mods {
@@ -26,11 +31,6 @@
             quick-tap-ms = <180>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
-        };
-
-        &lt {
-            tapping-term-ms = <200>;
-            flavor = "tap-unless-interrupted";
         };
 
         ftd1: tap_dance_1f1 {
