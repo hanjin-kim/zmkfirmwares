@@ -10,4 +10,3 @@ shield: [ "mykeyball_left", "mykeybal_right" ]
 include:
   - board: nice_nano_v2
     shield: mykeyball
----
