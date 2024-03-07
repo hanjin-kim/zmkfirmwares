@@ -22,10 +22,116 @@
         bhm: balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;    // <---[[moderate duration]]
-            quick-tap-ms = <200>;
+            tapping-term-ms = <180>;    // <---[[moderate duration]]
+            quick-tap-ms = <180>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
+        };
+
+        &lt {
+            tapping-term-ms = <200>;
+            flavor = "tap-unless-interrupted"
+        m};
+
+        ftd1: tap_dance_1f1 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N1>, <&kp F1>;
+        };
+
+        ftd2: tap_dance_2f2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N2>, <&kp F2>;
+        };
+
+        ftd3: tap_dance_3f3 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N3>, <&kp F3>;
+        };
+
+        ftd4: tap_dance_4f4 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N4>, <&kp F4>;
+        };
+
+        ftd5: tap_dance_5f5 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N5>, <&kp F5>;
+        };
+
+        ftd6: tap_dance_6f6 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N6>, <&kp F6>;
+        };
+
+        ftd7: tap_dance_7f7 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N7>, <&kp F7>;
+        };
+
+        ftd8: tap_dance_8f8 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N8>, <&kp F8>;
+        };
+
+        ftd9: tap_dance_9f9 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N9>, <&kp F9>;
+        };
+
+        ftd10: tap_dance_0f10 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N0>, <&kp F10>;
+        };
+
+        cptd: tap_dance_copy {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp C>, <&kp LC(C)>;
+        };
+        psttd: tap_dance_paste {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp V>, <&kp LC(V)>;
+        };
+        cttd: tap_dance_cut {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp X>, <&kp LC(X)>;
+        };
+        udtd: tap_dance_undo {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp Z>, <&kp LC(Z)>;
+        };
+        rdtd: tap_dance_redo {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp SQT>, <&kp LC(Y)>;
         };
     };
 
@@ -40,10 +146,10 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
             bindings = <
-&kp ESC   &kp N1       &kp N2       &kp N3        &kp N4        &kp N5                   /**/            &kp N6     &kp N7        &kp N8        &kp N9       &kp N0         &kp GRAVE
+&kp ESC   &td0 N1 F1   &td0 N2 F2   &td0 N3 F3    &td0 N4 F4    &td0 N5 F5               /**/            &td0 N6 F6 &td0 N7 F7    &td0 N8 F8    &td0 N9 F9   &td0 N0 F10   &kp GRAVE
 &kp TAB   &kp Q        &kp W        &kp E         &kp R         &kp T                    /**/            &kp Y      &kp U         &kp I         &kp O        &kp P          &kp MINUS
 &kp CAPS  &bhm LGUI A  &bhm LALT S  &bhm LCTRL D  &bhm LSHFT F  &kp G                    /**/            &kp H      &bhm RSHFT J  &bhm RCTRL K  &bhm RALT L  &bhm RGUI SEMI &kp EQUAL
-&kp SQT   &kp Z        &kp X        &kp C         &kp V         &kp B        &kp LBKT    /**/   &kp RBKT &kp N      &kp M         &lt 2 COMMA   &kp DOT      &kp FSLH       &kp BSLH
+&kp SQT   &udt         &ctdt        &cpdt         &pstdt        &kp B        &kp LBKT    /**/   &kp RBKT &kp N      &kp M         &lt 2 COMMA   &kp DOT      &kp FSLH       &kp BSLH
                                                   &lt 2 LANG1   &lt 1 SPACE  &lt 2 DEL   /**/   &kp BSPC &lt 1 RET                             
             >;
         };
