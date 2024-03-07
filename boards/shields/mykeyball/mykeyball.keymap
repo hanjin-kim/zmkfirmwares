@@ -31,7 +31,7 @@
         &lt {
             tapping-term-ms = <200>;
             flavor = "tap-unless-interrupted"
-        m};
+        };
 
         ftd1: tap_dance_1f1 {
             compatible = "zmk,behavior-tap-dance";
