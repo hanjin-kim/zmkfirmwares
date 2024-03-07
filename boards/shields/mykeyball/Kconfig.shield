@@ -1,0 +1,8 @@
+# Copyright (c) 2020 Pete Johanson
+# SPDX-License-Identifier: MIT
+
+config SHIELD_MYKEYBALL_LEFT
+    def_bool $(shields_list_contains,mykeyball_left)
+
+config SHIELD_MYKEYBALL_RIGHT 
+    def_bool $(shields_list_contains,mykeyball_right)
