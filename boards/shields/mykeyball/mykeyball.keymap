@@ -30,7 +30,7 @@
 
         &lt {
             tapping-term-ms = <200>;
-            flavor = "tap-unless-interrupted"
+            flavor = "tap-unless-interrupted";
         };
 
         ftd1: tap_dance_1f1 {
