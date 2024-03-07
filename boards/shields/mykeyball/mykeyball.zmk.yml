@@ -1,0 +1,11 @@
+file_format: "1"
+id: mykeyball
+name: MyKeyball
+type: shield
+requires: [pro_micro]
+features:
+  - keys
+  - pointer
+siblings:
+  - mykeyball_left
+  - mykeyball_right
