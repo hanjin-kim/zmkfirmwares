@@ -6,7 +6,7 @@
 # distinguish build outputs from each other:
 #
 board: [ "nice_nano_v2" ]
-shield: [ "mykeyball_left", "mykeybal_right" ]
+shield: [ "mykeyball_left", "mykeyball_right" ]
 include:
   - board: nice_nano_v2
     shield: mykeyball
