@@ -60,3 +60,10 @@
         scroll-layers = <2>; // optional indexes of drag scroll layers
     };
 };
+
+/ {
+  trackball_listener {
+    compatible = "zmk,input-listener";
+    device = <&trackball>;
+
+  };
