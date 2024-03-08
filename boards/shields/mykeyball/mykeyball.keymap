@@ -37,7 +37,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp CAPS>, <&caps_word>;
+            bindings = <&caps_word>, <&kp CAPS>;
         };
 
         ftd1: tap_dance_1f1 {
