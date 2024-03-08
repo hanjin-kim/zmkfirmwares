@@ -34,6 +34,13 @@
             bindings = <&kp>, <&kp>;
         };
 
+        cpstd: tap_dance_caps {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp CAPS>, <&caps_word>;
+        };
+
         ftd1: tap_dance_1f1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
