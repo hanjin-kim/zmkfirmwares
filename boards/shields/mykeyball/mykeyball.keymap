@@ -113,31 +113,31 @@
         cptd: tap_dance_copy {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp C>, <&kp LC(C)>;
         };
         psttd: tap_dance_paste {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp V>, <&kp LC(V)>;
         };
         cttd: tap_dance_cut {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp X>, <&kp LC(X)>;
         };
         udtd: tap_dance_undo {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp Z>, <&kp LC(Z)>;
         };
         rdtd: tap_dance_redo {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp SQT>, <&kp LC(Y)>;
         };
     };
