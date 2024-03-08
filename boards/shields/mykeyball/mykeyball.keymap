@@ -40,7 +40,7 @@
             bindings = <&caps_word>, <&kp CAPS>;
         };
 
-        alttaptd: tap_dance_alttap {
+        alttabtd: tap_dance_alttab {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <180>;
