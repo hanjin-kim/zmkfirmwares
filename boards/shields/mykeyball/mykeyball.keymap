@@ -40,6 +40,13 @@
             bindings = <&caps_word>, <&kp CAPS>;
         };
 
+        alttaptd: tap_dance_alttap {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <180>;
+            bindings = <&kp TAB>, <&kp LA(TAB)>;
+        };
+
         ftd1: tap_dance_1f1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
