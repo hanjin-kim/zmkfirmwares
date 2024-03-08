@@ -161,7 +161,7 @@
 //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
             bindings = <
 &kp ESC   &ftd1        &ftd2        &ftd3         &ftd4         &ftd5                    /**/            &ftd6      &ftd7         &ftd8         &ftd9        &ftd10         &kp GRAVE
-&kp TAB   &kp Q        &kp W        &kp E         &kp R         &kp T                    /**/            &kp Y      &kp U         &kp I         &kp O        &kp P          &kp MINUS
+&alttabtd &kp Q        &kp W        &kp E         &kp R         &kp T                    /**/            &kp Y      &kp U         &kp I         &kp O        &kp P          &kp MINUS
 &capstd   &bhm LGUI A  &bhm LALT S  &bhm LCTRL D  &bhm LSHFT F  &kp G                    /**/            &kp H      &bhm RSHFT J  &bhm RCTRL K  &bhm RALT L  &bhm RGUI SEMI &kp EQUAL
 &to 3     &udtd        &cttd        &cptd         &psttd        &kp B        &kp LBKT    /**/   &kp RBKT &kp N      &kp M         &lt 2 COMMA   &kp DOT      &kp FSLH       &kp BSLH
                                                   &lt 2 LANG1   &lt 1 SPACE  &lt 2 DEL   /**/   &kp BSPC &lt 1 RET                             
