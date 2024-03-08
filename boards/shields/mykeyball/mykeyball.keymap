@@ -28,7 +28,7 @@
         combo_gamelayer {
             timeout-ms = <50>;
             key-positions = <0 1>;
-            bindings = <&tog 3>
+            bindings = <&tog 3>;
         };
     };
 
