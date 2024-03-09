@@ -80,7 +80,7 @@
         ftd4: tap_dance_4f4 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <vv>;
+            tapping-term-ms = <160>;
             bindings = <&kp N4>, <&kp F4>;
         };
 
