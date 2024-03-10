@@ -18,7 +18,7 @@
 
 &lt {
     tapping-term-ms = <150>;
-    require-prior-idle-ms = <150>;
+    require-prior-idle-ms = <130>;
 };
 
 / {
@@ -38,7 +38,7 @@
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <130>;
             bindings = <&kp>, <&kp>;
             hold-trigger-on-release;
         };
