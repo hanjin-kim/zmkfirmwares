@@ -40,6 +40,7 @@
             quick-tap-ms = <175>;                // repeat on tap-into-hold
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
+            hold-trigger-on-release;
         };
 
         capstd: tap_dance_caps {
