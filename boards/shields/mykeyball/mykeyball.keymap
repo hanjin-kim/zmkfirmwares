@@ -35,8 +35,8 @@
         bhm: balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <130>;
-            quick-tap-ms = <130>;
+            tapping-term-ms = <180>;
+            quick-tap-ms = <180>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
