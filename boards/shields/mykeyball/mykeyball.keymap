@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/mouse.h>
 
 #include <behaviors/mouse_keys.dtsi>
-
+e
 #define DEFAULT 0
 #define UPPER 1
 #define LOWER 2
@@ -36,8 +36,8 @@
         bhm: balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <130>;
+            quick-tap-ms = <130>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
