@@ -16,11 +16,22 @@
 #define LOWER 2
 #define GAME 3
 
+#define NUM_L 1 2 3 4 5
+#define NUM_R 6 7 8 9 10
+
+#define ALPHA_L 13 14 15 16 17 \
+                25 26 27 28 29 \
+                37 38 39 40 41 42
+#define ALPHA_R 18 19 20 21 22 \
+                30 31 32 33 34 \
+             43 44 45 46 47 48
 &lt {
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
             require-prior-idle-ms = <100>;
+            hold-trigger-key-positions = <NUM_L NUM_R ALPHA_L ALPHA_R>;    // <---[[the W key]]
+            hold-trigger-on-release;             // delay positional check until key-release
 };
 
 / {
