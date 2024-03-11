@@ -79,6 +79,7 @@
             tapping-term-ms = <180>;
             bindings = <&kp TAB>, <&kp LA(TAB)>;
         };
+    };
 
     keymap {
         compatible = "zmk,keymap";
