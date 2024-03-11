@@ -122,10 +122,10 @@
 
         game_layer {
             bindings = <
-&kp ESC         &bhm LC(N1) N1  &bhm LC(N2) N2  &bhm LC(N3) N3  &bhm LC(N4) N4  &bhm LC(N5) N5            /**/            &kp N6     &kp N7        &kp N8        &kp N9       &kp N0         &kp GRAVE
-&bhm LC(F2) F2  &kp Q           &kp W           &kp E           &kp R           &bhm LCTRL T              /**/            &kp Y      &kp U         &kp I         &kp O        &kp P          &kp MINUS
-&bhm LC(F3) F3  &kp A           &kp S           &kp D           &kp F           &bhm LSHIFT G             /**/            &kp H      &bhm RSHFT J  &bhm RCTRL K  &bhm RALT L  &bhm RGUI SEMI &kp EQUAL
-&bhm LC(F4) F4  &kp Z           &kp X           &kp C           &kp V           &bhm LALT B     &kp LBKT  /**/   &kp RBKT &kp N      &kp M         &lt 2 COMMA   &kp DOT      &kp FSLH       &kp BSLH
+&kp ESC         &bhml LC(N1) N1  &bhml LC(N2) N2  &bhml LC(N3) N3  &bhml LC(N4) N4  &bhml LC(N5) N5            /**/            &kp N6     &kp N7        &kp N8        &kp N9       &kp N0         &kp GRAVE
+&bhml LC(F2) F2  &kp Q           &kp W           &kp E           &kp R           &bhml LCTRL T              /**/            &kp Y      &kp U         &kp I         &kp O        &kp P          &kp MINUS
+&bhml LC(F3) F3  &kp A           &kp S           &kp D           &kp F           &bhml LSHIFT G             /**/            &kp H      &bhmr RSHFT J  &bhmr RCTRL K  &bhmr RALT L  &bhm RGUI SEMI &kp EQUAL
+&bhml LC(F4) F4  &kp Z           &kp X           &kp C           &kp V           &bhml LALT B     &kp LBKT  /**/   &kp RBKT &kp N      &kp M         &lt 2 COMMA   &kp DOT      &kp FSLH       &kp BSLH
                                                                 &lt 2 LANG1     &lt 1 SPACE     &kp TAB   /**/   &kp BSPC &lt 1 RET                             
             >;
         };
