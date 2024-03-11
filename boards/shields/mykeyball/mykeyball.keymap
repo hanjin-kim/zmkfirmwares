@@ -45,10 +45,10 @@
         bhml: balanced_homerow_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <280>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <230>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <NUM_R ALPHA_R MACRO_R THUMBS>;    // <---[[the W key]]
             hold-trigger-on-release;
@@ -57,10 +57,10 @@
         bhmr: balanced_homerow_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <280>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <230>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <NUM_L ALPHA_L MACRO_L THUMBS>;    // <---[[the W key]]
             hold-trigger-on-release;
