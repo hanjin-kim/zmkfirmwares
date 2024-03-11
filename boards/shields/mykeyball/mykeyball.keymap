@@ -38,49 +38,49 @@
         combo_sqt {
             timeout-ms = <50>;
             key-positions = <14 15>;
-            layers = <1>
+            layers = <1>;
             bindings = <&kp SQT>;
         };
         combo_dqt {
             timeout-ms = <50>;
             key-positions = <15 16>;
-            layers = <1>
+            layers = <1>;
             bindings = <&kp DQT>;
         };
         combo_lpar {
             timeout-ms = <50>;
             key-positions = <19 20>;
-            layers = <1>
+            layers = <1>;
             bindings = <&kp LPAR>;
         };
         combo_rpar {
             timeout-ms = <50>;
             key-positions = <20 21>;
-            layers = <1>
+            layers = <1>;
             bindings = <&kp RPAR>;
         };
         combo_lbkt {
             timeout-ms = <50>;
             key-positions = <31 32>;
-            layers = <1>
+            layers = <1>;
             bindings = <&kp LBKT>;
         };
         combo_rbkt {
             timeout-ms = <50>;
             key-positions = <32 33>;
-            layers = <1>
+            layers = <1>;
             bindings = <&kp RBKT>;
         };
         combo_lbrc {
             timeout-ms = <50>;
             key-positions = <45 46>;
-            layers = <1>
+            layers = <1>;
             bindings = <&kp LBRC>;
         };
         combo_rbrc {
             timeout-ms = <50>;
             key-positions = <46 47>;
-            layers = <1>
+            layers = <1>;
             bindings = <&kp RBRC>;
         }; 
 
