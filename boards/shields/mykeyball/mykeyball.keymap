@@ -17,7 +17,10 @@
 #define GAME 3
 
 &lt {
-    tapping-term-ms = <150>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;                // repeat on tap-into-hold
+            require-prior-idle-ms = <100>;
 };
 
 / {
@@ -125,6 +128,13 @@
             tapping-term-ms = <160>;
             bindings = <&kp N0>, <&kp F10>;
         };
+
+        sqtd: tap_dance_sqt {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <160>;
+            bindings = <&kp COMMA>, <&kp SQT>;
+        };
     };
 
     keymap {
@@ -141,7 +151,7 @@
 &kp ESC   &ftd1        &ftd2        &ftd3         &ftd4         &ftd5                    /**/            &ftd6      &ftd7         &ftd8         &ftd9        &ftd10         &kp GRAVE
 &kp TAB   &kp Q        &kp W        &kp E         &kp R         &kp T                    /**/            &kp Y      &kp U         &kp I         &kp O        &kp P          &kp MINUS
 &capstd   &bhm LGUI A  &bhm LALT S  &bhm LCTRL D  &bhm LSHFT F  &kp G                    /**/            &kp H      &bhm RSHFT J  &bhm RCTRL K  &bhm RALT L  &bhm RGUI SEMI &kp EQUAL
-&to 3     &kp Z        &kp X        &kp C         &kp V         &kp B        &kp LBKT    /**/   &kp RBKT &kp N      &kp M         &&lt 2 COMMA  &kp DOT      &kp FSLH       &kp BSLH
+&to 3     &kp Z        &kp X        &kp C         &kp V         &kp B        &kp LBKT    /**/   &kp RBKT &kp N      &kp M         &lt 2 COMMA   &kp DOT      &kp FSLH       &kp BSLH
                                                   &lt 2 LANG1   &lt 1 SPACE  &lt 2 DEL   /**/   &kp BSPC &lt 1 RET                             
             >;
         };
