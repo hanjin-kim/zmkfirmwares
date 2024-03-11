@@ -125,13 +125,6 @@
             tapping-term-ms = <160>;
             bindings = <&kp N0>, <&kp F10>;
         };
-
-        qtd: tap_dance_quote {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <180>;
-            bindings = <&lt 2 COMMA>, <&kp SQT>, <&kp DQT>;
-        };
     };
 
     keymap {
@@ -148,7 +141,7 @@
 &kp ESC   &ftd1        &ftd2        &ftd3         &ftd4         &ftd5                    /**/            &ftd6      &ftd7         &ftd8         &ftd9        &ftd10         &kp GRAVE
 &kp TAB   &kp Q        &kp W        &kp E         &kp R         &kp T                    /**/            &kp Y      &kp U         &kp I         &kp O        &kp P          &kp MINUS
 &capstd   &bhm LGUI A  &bhm LALT S  &bhm LCTRL D  &bhm LSHFT F  &kp G                    /**/            &kp H      &bhm RSHFT J  &bhm RCTRL K  &bhm RALT L  &bhm RGUI SEMI &kp EQUAL
-&to 3     &kp Z        &kp X        &kp C         &kp V         &kp B        &kp LBKT    /**/   &kp RBKT &kp N      &kp M         &qtd          &kp DOT      &kp FSLH       &kp BSLH
+&to 3     &kp Z        &kp X        &kp C         &kp V         &kp B        &kp LBKT    /**/   &kp RBKT &kp N      &kp M         &&lt 2 COMMA  &kp DOT      &kp FSLH       &kp BSLH
                                                   &lt 2 LANG1   &lt 1 SPACE  &lt 2 DEL   /**/   &kp BSPC &lt 1 RET                             
             >;
         };
@@ -156,9 +149,10 @@
         upper_layer {
             bindings = <
 &kp ESC    &kp F1     &kp F2      &kp F3     &kp F4     &kp F5             /**/           &kp F6  &kp F7     &kp F8    &kp F9     &kp F10   &kp F11
-&kp TAB    &kp Q      &kp W       &kp E      &kp R      &kp T              /**/           &kp Y   &kp U      &kp UP    &kp O      &kp P     &kp UNDER
+&kp TAB    &kp Q      &kp SQT     &kp DQT    &kp R      &kp T              /**/           &kp Y   &kp U      &kp UP    &kp O      &kp P     &kp UNDER
 &kp CAPS   &kp LC(A)  &kp LC(S)   &trans     &trans     &kp G              /**/           &kp H   &kp LEFT   &kp DOWN  &kp RIGHT  &kp SEMI  &kp SQT
-&kp LC(Y)  &kp LC(Z)  &kp LC(X)   &kp LC(C)  &kp LC(V)  &kp B     &kp LBKT /**/  &kp RBKT &kp N   &mkp LCLK  &mkp SCLK  &mkp RCLK  &kp FSLH  &kp DQT                                          &kp RET    &kp SPACE &kp DEL  /**/  &kp BSPC &kp RET                             
+&kp LC(Y)  &kp LC(Z)  &kp LC(X)   &kp LC(C)  &kp LC(V)  &kp B     &kp LBKT /**/  &kp RBKT &kp N   &mkp LCLK  &mkp SCLK  &mkp RCLK  &kp FSLH  &kp DQT 
+&kp RET    &kp SPACE &kp DEL  /**/  &kp BSPC &kp RET                             
             >;
         };
 
