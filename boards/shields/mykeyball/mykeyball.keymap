@@ -31,15 +31,6 @@
 
 #define THUMBS 50 51 52 53 54
 
-&lt {
-            flavor = "balanced";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;                // repeat on tap-into-hold
-            require-prior-idle-ms = <100>;
-            hold-trigger-key-positions = <NUM_L NUM_R ALPHA_L ALPHA_R>;    // <---[[the W key]]
-            hold-trigger-on-release;             // delay positional check until key-release
-};
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -100,11 +91,11 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
             bindings = <
-&kp ESC   &kp N1       &kp N2       &kp N3        &kp N4        &kp N5                    /**/           &kp N6    &kp N7       &kp N8         &kp N9        &kp N10         &kp GRAVE
-&kp TAB   &kp Q        &kp W        &kp E         &kp R         &kp T                    /**/            &kp Y      &kp U         &kp I         &kp O        &kp P          &kp MINUS
-&capstd   &bhml LGUI A  &bhml LALT S  &bhml CTRL D  &bhml LSHFT F  &kp G                    /**/            &kp H      &bhmr RSHFT J  &bhmr RCTRL K  &bhmr RALT L  &bhmr RGUI SEMI &kp EQUAL
-&to 3     &kp Z        &kp X        &kp C         &kp V         &kp B        &kp LBKT    /**/   &kp RBKT &kp N      &kp M         &lt 2 COMMA   &kp DOT      &kp FSLH       &kp BSLH
-                                                  &lt 2 LANG1   &lt 1 SPACE  &lt 2 DEL   /**/   &kp BSPC &lt 1 RET                             
+&kp ESC   &kp N1        &kp N2        &kp N3        &kp N4         &kp N5                   /**/            &kp N6     &kp N7         &kp N8         &kp N9        &kp N10          &kp GRAVE
+&kp TAB   &kp Q         &kp W         &kp E         &kp R          &kp T                    /**/            &kp Y      &kp U          &kp I          &kp O         &kp P            &kp MINUS
+&capstd   &bhml LGUI A  &bhml LALT S  &bhml CTRL D  &bhml LSHFT F  &kp G                    /**/            &kp H      &bhmr RSHFT J  &bhmr RCTRL K  &bhmr RALT L  &bhmr RGUI SEMI  &kp EQUAL
+&to 3     &kp Z         &kp X         &kp C         &kp V          &kp B        &kp LBKT    /**/   &kp RBKT &kp N      &kp M          &lt 2 COMMA    &kp DOT       &kp FSLH         &kp BSLH
+                                                    &lt 2 LANG1    &lt 1 SPACE  &lt 2 DEL   /**/   &kp BSPC &lt 1 RET                             
             >;
         };
 
