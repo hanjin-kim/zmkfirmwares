@@ -1,4 +1,4 @@
-if SHIELD_MYKEYBALL_RIGHT
+if SHIELD_MYKEYBALL_DONGLE
 
 config ZMK_KEYBOARD_NAME
     default "MyKeyball"
