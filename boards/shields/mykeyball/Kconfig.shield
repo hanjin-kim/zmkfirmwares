@@ -6,6 +6,3 @@ config SHIELD_MYKEYBALL_LEFT
 
 config SHIELD_MYKEYBALL_RIGHT 
     def_bool $(shields_list_contains,mykeyball_right)
-
-config SHIELD_MYKEYBALL_DONGLE
-    def_bool $(shields_list_contains,mykeyball_dongle)
