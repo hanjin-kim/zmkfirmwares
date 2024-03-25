@@ -1,0 +1,52 @@
+ /*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/mouse.h>
+
+#include <behaviors/mouse_keys.dtsi>
+#define DEFAULT 0
+#define UPPER 1
+#define LOWER 2
+#define GAME 3
+
+#define NUM_L 1 2 3 4 5
+#define NUM_R 6 7 8 9 10
+
+#define ALPHA_L 13 14 15 16 17 \
+                25 26 27 28 29 \
+                37 38 39 40 41 42
+#define ALPHA_R 18 19 20 21 22 \
+                30 31 32 33 34 \
+             43 44 45 46 47 48
+
+#define MACRO_L 0 12 24 36
+#define MACRO_R 11 23 35 49
+
+#define THUMBS 50 51 52 53 54
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+ 
+        default_layer {
+// ------------------------------------------------------------------------------------------------------------
+// |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
+// |  CTRL |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
+//                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
+            bindings = <
+&kp TAB   &kp Q         &kp W         &kp E          &kp R           &kp T                    /**/            &kp Y      &kp U           &kp I          &kp O         &kp P            &kp MINUS
+&capstd   &bhml LGUI A  &bhml LALT S  &bhml LCTRL D  &bhml LSHIFT F  &kp G                    /**/            &kp H      &bhmr RSHIFT J  &bhmr RCTRL K  &bhmr RALT L  &bhmr RGUI SEMI  &kp EQUAL
+&to 3     &kp Z         &kp X         &kp C          &kp V           &kp B                    /**/            &kp N      &kp M           &lt 2 COMMA    &kp DOT       &kp FSLH         &kp BSLH
+                                                    &lt 1 SPACE      &lt 2 DEL                /**/            &kp BSPC   &lt 1 RET                             
+            >;
+        };
+    };
+};
