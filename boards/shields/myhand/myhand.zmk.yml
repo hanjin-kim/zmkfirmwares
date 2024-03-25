@@ -1,0 +1,10 @@
+file_format: "1"
+id: myhand
+name: MyHand
+type: shield
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - myhand_left
+  - myhand_right
