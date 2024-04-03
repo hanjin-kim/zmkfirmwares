@@ -8,3 +8,4 @@ features:
 siblings:
   - myhand_left
   - myhand_right
+  - myhand_dongle
