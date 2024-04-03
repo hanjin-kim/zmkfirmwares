@@ -6,11 +6,16 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config ZMK_USB
+	default y
 endif
 
 if SHIELD_MYHAND_LEFT || SHIELD_MYHAND_RIGHT || SHIELD_MYHAND_DONGLE
 
 config ZMK_SPLIT
     default y
+
+config ZMK_BLE
+	default y
 
 endif
