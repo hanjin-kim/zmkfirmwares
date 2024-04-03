@@ -6,3 +6,6 @@ config SHIELD_MYHAND_LEFT
 
 config SHIELD_MYHAND_RIGHT 
     def_bool $(shields_list_contains,myhand_right)
+
+config SHIELD_MYHAND_DONGLE
+    def_bool $(shields_list_contains,myhand_dongle)
