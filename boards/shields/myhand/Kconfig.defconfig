@@ -10,6 +10,20 @@ config ZMK_USB
 	default y
 endif
 
+if ZMK_DISPLAY
+
+config I2C
+    default y
+
+config SSD1306
+    default y
+
+choice ZMK_DISPLAY_WORK_QUEUE
+    default ZMK_DISPLAY_WORK_QUEUE_DEDICATED
+endchoice
+
+endif
+
 if SHIELD_MYHAND_LEFT || SHIELD_MYHAND_RIGHT || SHIELD_MYHAND_DONGLE
 
 config ZMK_SPLIT
