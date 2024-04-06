@@ -41,8 +41,8 @@
 &i2c0 {
     status = "okay";
 
-    oled: ssd1306@3c {
-        compatible = "solomon,ssd1306fb";
+    oled: ssd1106@3c {
+        compatible = "sinowealth,ssh1106";
         reg = <0x3c>;
         width = <128>;
         height = <64>;
