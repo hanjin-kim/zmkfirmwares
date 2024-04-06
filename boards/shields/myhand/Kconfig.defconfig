@@ -1,4 +1,4 @@
-eeif SHIELD_MYHAND_DONGLE
+if SHIELD_MYHAND_DONGLE
 
 config ZMK_KEYBOARD_NAME
     default "MyHand"
