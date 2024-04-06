@@ -23,6 +23,22 @@
             ;
     };
 };
+&pinctrl {
+    spi0_default: spi0_default {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SCL, 0, 10)>,
+                <NRF_PSEL(TWIM_SDA, 1, 11)>;
+        };
+    };
+
+    spi0_sleep: spi0_sleep {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SCL, 0, 10)>,
+                <NRF_PSEL(TWIM_SDA, 1, 11)>;
+            low-power-enable;
+        };
+    };
+};
 
 &i2c {
     status = "okay";
