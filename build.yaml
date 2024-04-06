@@ -22,4 +22,4 @@ include:
   - board: nice_nano_v2
     shield: myhand_right
   - board: nice_nano_v2
-    shield: myhand_dongle
+    shield: myhand_dongle dongle_display
