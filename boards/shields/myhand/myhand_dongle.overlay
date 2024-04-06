@@ -10,19 +10,18 @@
     chosen {
         zephyr,display = &oled;
     };
-};
 
-&kscan0 {
-    col-gpios
-        = <&pro_micro 7 GPIO_ACTIVE_HIGH
-        , <&pro_micro 6 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 5 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 4 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 3 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 2 GPIO_ACTIVE_HIGH>
-        ;
+    kscan0 {
+        col-gpios
+            = <&pro_micro 7 GPIO_ACTIVE_HIGH
+            , <&pro_micro 6 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 5 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 4 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 3 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 2 GPIO_ACTIVE_HIGH>
+            ;
+    };
 };
-
 
 &i2c0 {
     status = "okay";
