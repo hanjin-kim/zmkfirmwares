@@ -40,7 +40,7 @@
 
 &i2c0 {
     status = "okay";
-
+ 
     oled: sh1106@3c {
         compatible = "sinowealth,sh1106";
         reg = <0x3c>;
@@ -52,8 +52,8 @@
         multiplex-ratio = <63>;
         segment-remap;
         com-invdir;
-        com-sequential;
         inversion-on;
         prechargep = <0x22>;
     };
 }; 
+
