@@ -35,9 +35,6 @@
         page-offset = <0>;
         display-offset = <0>;
         multiplex-ratio = <63>;
-        segment-remap;
-        com-invdir;
-        inversion-on;
         prechargep = <0x22>;
     };
 }; 
