@@ -6,13 +6,39 @@
 
 #include "myhand.dtsi"
 
-&kscan0 {
-    col-gpios
-        = <&pro_micro 7 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 6 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 5 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 4 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 3 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 2 GPIO_ACTIVE_HIGH>
-        ;
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+        zephyr,display = &oled;
+    };
+
+    &kscan0 {
+        col-gpios
+            = <&pro_micro 7 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 6 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 5 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 4 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 3 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 2 GPIO_ACTIVE_HIGH>
+            ;
+    };
 };
+
+&i2c {
+    status = "okay";
+    
+    oled: ssd1306@3c {
+        compatible = "solomon,ssd1306fb";
+        reg = <0x3c>;
+        width = <128>;
+        height = <64>;
+        segment-offset = <0>;
+        page-offset = <0>;
+        display-offset = <0>;
+        multiplex-ratio = <63>;
+        segment-remap;
+        com-invdir;
+        inversion-on;
+        prechargep = <0x22>;
+    };
+}; 
