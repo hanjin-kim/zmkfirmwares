@@ -1,0 +1,8 @@
+# 내 키보드의 존재를 알리기
+# 내 스플릿 키보드의 이름은 MY_BOARD
+
+config SHIELD_MY_BOARD_LEFT
+    def_bool $(shields_list_contains,my_board_left)
+
+config SHIELD_MY_BOARD_RIGHT
+    def_bool $(shields_list_contains,my_board_right)
