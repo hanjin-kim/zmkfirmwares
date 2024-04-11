@@ -1,0 +1,10 @@
+file_format: "1"
+id: example
+name: Example
+type: shield
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - example_left
+  - example_right
