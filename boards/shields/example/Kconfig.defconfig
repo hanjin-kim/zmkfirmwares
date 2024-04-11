@@ -1,0 +1,29 @@
+# 내 키보드의 기본적인 (하드웨어적) 속성들
+
+# 왼손 속성
+if SHIELD_MY_BOARD_LEFT
+
+  # 인식될 이름
+  config ZMK_KEYBOARD_NAME
+      default "My Board"
+
+  # 내 키보드는 왼손이 컴퓨터와 연결될 것
+  # 오른손은 왼손에 연결된다
+  config ZMK_SPLIT_ROLE_CENTRAL
+      default y
+
+endif
+
+# 오른손 속성
+if SHIELD_MY_BOARD_RIGHT
+  # ...
+endif
+
+# 양손 동일 속성
+if SHIELD_MY_BOARD_LEFT || SHIELD_MY_BOARD_RIGHT
+
+  # 내 키보드는 스플릿 키보드이다
+  config ZMK_SPLIT
+      default y
+
+endif
