@@ -9,7 +9,7 @@ manifest:
   projects:
     - name: zmk
       remote: hanjin
-      revision: zmk_colemak
+      revision: feat/pointers-move-scroll
       import: app/west.yml
     - name: zmk-config
       remote: englmaxi
